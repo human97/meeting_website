@@ -14,13 +14,11 @@
 
 body {
     font-family: $font;
-    font-style: normal;
-    color: #000;
     background: #fff;
     //min-height: 100vh;
     
     /* mobile viewport bug fix */
-    min-height: -webkit-fill-available;
+    //min-height: -webkit-fill-available;
 }
 
 /* blocks */

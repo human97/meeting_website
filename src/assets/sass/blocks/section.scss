@@ -6,18 +6,36 @@ section {
   width: 360px;
   text-align: left;
 
-  h1 {
-    line-height: 0;
+  @media (min-width:768px) {
+    width: 768px;
+}
+
+.text_wrapper{
+  @media (min-width:768px) {
+    background: #1519FF;
+}
+
+}
+  
+h1{
+  @media (min-width:768px) {
+    white-space: nowrap;
   }
+}
 
   span {
-    padding: 0 10px 0 0;
+    font-size: 30px; 
     font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 100%;
+    font-weight: normal;  
     text-transform: uppercase;
     color: #F4F4F4;
+    padding: 0 10px 0 0;
     background: #1519FF;
+
+    @media (min-width:768px) {
+      font-size: 46px; 
+      padding: 0;
+      white-space: nowrap;
+    }
   }
 }
