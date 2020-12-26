@@ -1,0 +1,9 @@
+/* profiles_wrapper */
+
+.profiles_wrapper{
+@media (min-width:1366px) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+}

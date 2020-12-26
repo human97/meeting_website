@@ -359,7 +359,7 @@ body {
 /* section */
 section {
     margin: 0 auto;
-    padding: 76px 24px;
+    padding: 0 24px;
     width: 360px;
     text-align: left;
 }
@@ -367,22 +367,37 @@ section {
 @media (min-width: 768px) {
     section {
         width: 768px;
+        padding: 0 32px;
     }
+}
+
+@media (min-width: 1366px) {
+    section {
+        width: 1366px;
+        padding: 0 48px;
+    }
+}
+
+section .text_wrapper {
+    margin: 76px 0 34px 0;
 }
 
 @media (min-width: 768px) {
     section .text_wrapper {
         background: #1519FF;
+        margin: 76px 0 49px 0;
     }
 }
 
-@media (min-width: 768px) {
-    section h1 {
-        white-space: nowrap;
+@media (min-width: 1366px) {
+    section .text_wrapper {
+        display: inline-block;
+        margin: 96px 0 49px 0;
     }
 }
 
-section span {
+.span {
+    display: inline-block;
     font-size: 30px;
     font-style: normal;
     font-weight: normal;
@@ -393,29 +408,59 @@ section span {
 }
 
 @media (min-width: 768px) {
-    section span {
-        font-size: 46px;
+    .span {
+        font-size: 45px;
         padding: 0;
         white-space: nowrap;
+    }
+}
+
+@media (min-width: 1366px) {
+    .span {
+        font-weight: 500;
+        font-size: 72px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .span_later {
+        padding: 0 5px 0 15px;
     }
 }
 
 /* profile */
 .profile {
     font-style: normal;
-    color: #000;
     padding: 0;
+    margin: 0 0 48px 0;
+}
+
+.profile:last-child {
+    margin: 0 0 76px 0;
+}
+
+@media (min-width: 1366px) {
+    .profile:last-child {
+        margin: 0 0 96px 0;
+    }
 }
 
 @media (min-width: 768px) {
     .profile {
         display: flex;
-        margin: 40px 0 0 0;
+        margin: 0 0 49px 0;
+    }
+}
+
+@media (min-width: 1366px) {
+    .profile {
+        width: 619px;
+        margin: 0 0 33px 0;
     }
 }
 
 .profile_text {
-    margin: 34px 0 16px 0;
+    margin: 0 0 16px 0;
     padding: 16px 0 0 0;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
 }
@@ -424,12 +469,20 @@ section span {
     .profile_text {
         order: 2;
         margin: 0;
-        padding: 16px;
+        padding: 20px 0 0 18px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .profile_text {
+        padding: 24px 0 0 32px;
     }
 }
 
 .profile_text h2 {
     margin: 0 0 4px 0;
+    color: #000;
+    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 140%;
@@ -442,7 +495,15 @@ section span {
     }
 }
 
+@media (min-width: 1366px) {
+    .profile_text h2 {
+        font-weight: 500;
+        font-size: 20px;
+    }
+}
+
 .profile_text p {
+    font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 170%;
@@ -455,8 +516,15 @@ section span {
     }
 }
 
+@media (min-width: 768px) {
+    .profile_text p {
+        font-size: 16px;
+    }
+}
+
 p.time {
     margin: 10px 0 8px 0;
+    font-style: normal;
     font-weight: bold;
     font-size: 12px;
     line-height: 170%;
@@ -465,7 +533,15 @@ p.time {
 
 @media (min-width: 768px) {
     p.time {
+        margin: 20px 0 8px 0;
         font-size: 14px;
+    }
+}
+
+@media (min-width: 1366px) {
+    p.time {
+        margin: 24px 0 12px 0;
+        font-size: 16px;
     }
 }
 
@@ -477,6 +553,36 @@ p.time {
     .photo {
         max-width: none;
         width: 343px;
+        height: 343px;
         order: 1;
+    }
+}
+
+@media (min-width: 1366px) {
+    .photo {
+        width: 294px;
+        height: 294px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .profile_text-desctop {
+        order: 1;
+        padding: 24px 65px 0 0;
+    }
+}
+
+@media (min-width: 1366px) {
+    .profile_picture-desctop {
+        order: 2;
+    }
+}
+
+/* profiles_wrapper */
+@media (min-width: 1366px) {
+    .profiles_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
